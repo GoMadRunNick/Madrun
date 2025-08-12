@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Updated gradient to the purple theme */
+        .gradient-text {
+            background: -webkit-linear-gradient(45deg, #e2b3ff, #cb6ce6, #a94de0);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .btn-hover-effect {
+            transition: all 0.3s ease;
+        }
+        /* Updated box-shadow to match the new button color */
+        .btn-hover-effect:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(203, 108, 230, 0.3), 0 6px 6px rgba(203, 108, 230, 0.25);
+        }
+    </style>
+</head>
+<body class="bg-black text-white antialiased">
+
+    <!-- Main container -->
+    <div class="flex flex-col items-center justify-center min-h-screen p-6">
+        
+        <!-- Content Box -->
+        <div class="text-center max-w-2xl">
+            
+            <!-- Main Heading with responsive text sizes -->
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-black uppercase tracking-wider mb-4">
+                New things in the <span class="gradient-text">works.</span>
+            </h1>
+            
+            <!-- Subheading -->
+            <p class="text-lg md:text-xl text-gray-400 mb-12">
+                We'll be back soon.
+            </p>
+            
+            <!-- Contact Button -->
+            <!-- Updated button background color and email link -->
+            <a href="mailto:joe@gomadrun.com,nick@gomadrun.com" 
+               class="btn-hover-effect inline-block bg-[#cb6ce6] text-black font-bold uppercase tracking-widest py-4 px-10 rounded-full text-md">
+                Contact Us
+            </a>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
